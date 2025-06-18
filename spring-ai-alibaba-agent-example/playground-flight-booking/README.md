@@ -53,4 +53,9 @@ Run the following command to build frontend, this is only necessary when you mad
 mvn clean compile -Pbuild-frontend
 ```
 
+如果报 yarn 不存在，请先安装 yarn，然后再重新执行上面的命令
+```shell
+npm install -g yarn
+```
+
 Then explore in [localhost:9000](http://localhost:9000)
