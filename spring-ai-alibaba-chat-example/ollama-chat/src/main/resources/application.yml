@@ -1,12 +1,10 @@
 server:
   port: 10005
-
 spring:
   application:
     name: spring-ai-alibaba-ollama-chat-model-example
-
   ai:
     ollama:
-      base-url: http://localhost:11434
+      base-url: http://10.0.0.182:11434
       chat:
-        model: llama3
+        model: qwen3:32b
