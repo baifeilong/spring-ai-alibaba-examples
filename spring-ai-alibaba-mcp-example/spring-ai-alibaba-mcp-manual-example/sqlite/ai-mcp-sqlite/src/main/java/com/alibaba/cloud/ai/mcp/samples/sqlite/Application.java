@@ -64,7 +64,7 @@ public class Application {
 	public McpSyncClient mcpClient() {
 
 		// Windows 系统需要修改
-		var stdioParams = ServerParameters.builder("uvx")
+		var stdioParams = ServerParameters.builder("D:\\ProgramFiles\\uv-x86_64-pc-windows-msvc\\uvx.exe")
 				.args("mcp-server-sqlite", "--db-path",
 						getDbPath())
 				.build();
@@ -82,7 +82,7 @@ public class Application {
 
 	private static String getDbPath() {
 
-		String path = Paths.get(System.getProperty("user.dir"), "test.db").toString();
+		String path = Paths.get(System.getProperty("user.dir"), "spring-ai-alibaba-mcp-example", "spring-ai-alibaba-mcp-manual-example", "sqlite", "ai-mcp-sqlite", "test.db").toString();
 		System.out.println(path);
 
 		return path;
